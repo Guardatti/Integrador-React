@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Routes as ReactDomRoutes, Route } from 'react-router-dom'
-import Navbar from '../components/Navbar/Navbar'
 import Home from '../pages/Home/Home'
 import AboutUs from '../pages/AboutUs/AboutUs'
 import Peripherals from '../pages/Peripherals/Peripherals'
@@ -11,13 +10,14 @@ import Tablets from '../pages/Tablets/Tablets'
 import AppleStore from '../pages/AppleStore/AppleStore'
 import ConnectivityAndNetworks from '../pages/ConnectivityAndNetworks/ConnectivityAndNetworks'
 import ContactUs from '../pages/ContactUs/ContactUs'
+import Layout from '../components/Layout/Layout'
 
 
 
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Navbar>
+      <Layout>
         <ReactDomRoutes>
           <Route path='/' element={<Home />} />
           <Route path='aboutus' element={<AboutUs />} />
@@ -30,7 +30,7 @@ const Routes = () => {
           <Route path='connectivityandnetworks' element={<ConnectivityAndNetworks />} />
           <Route path='contactus' element={<ContactUs />} />
         </ReactDomRoutes>
-      </Navbar>
+      </Layout>
     </BrowserRouter>
   )
 }

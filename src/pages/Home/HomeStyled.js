@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Probando = styled.div`
-    margin-top: 80px;
-    background-color: black;
+    background-color: green;
     width: 100%;
-    height: 100%;
+    height: 500px;
 `

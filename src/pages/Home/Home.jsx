@@ -1,5 +1,5 @@
 import React from 'react'
-import { Probando } from './HomeStyled'
+import { Probando, ProbandoContainer } from './HomeStyled'
 
 const Home = () => {
   return (
@@ -7,7 +7,6 @@ const Home = () => {
       <Probando>aaa</Probando>
       <Probando>aaa</Probando>
     </Probando>
-
   )
 }
 
